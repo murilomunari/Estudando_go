@@ -5,6 +5,6 @@ type Pessoa struct {
 	Sobrenome string
 	Idade int
 	Altura float64
-
-
+	Endereco Endereco
+	Emprego Emprego
 }
