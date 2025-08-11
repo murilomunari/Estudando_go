@@ -1,27 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"curso-go/model"
+)
+
 
 // estudando structs
-
-type Pessoa struct {
-	nome string
-	sobrenome string
-	idade int
-	altura float64
-
-
-}
-
 func main() {
 	//criando uma "instancia" da struct Pessoa
 
-	p := Pessoa { // p é uma variavel do tipo Pessoa
-		nome: "Murilo",
-		sobrenome: "Silva",
-		idade: 20,
-		altura: 1.75,
+	p := model.Pessoa { // p é uma variavel do tipo Pessoa
+		Nome: "Murilo",
+		Sobrenome: "Silva",
+		Idade: 20,
+		Altura: 1.75,
 	}
 
 	fmt.Println(p)
 }
+
+// vendo encapsulamento
