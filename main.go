@@ -15,6 +15,7 @@ func main() {
 		Sobrenome: "Munari",
 		Idade: 24,
 		Altura: 1.75,
+		DataDeNascimento: time.Date(2001, 1, 20, 0, 0, 0, 0, time.Local),
 		Endereco: model.Endereco {
 			Rua: "Rua dos Bobos",
 			Numero: 0,
@@ -29,6 +30,8 @@ func main() {
 	}
 
 	fmt.Println(p)
+	idade := p.IdadeAtual()
+	fmt.Println(idade)
 }
 
 // vendo encapsulamento
